@@ -1,0 +1,355 @@
+/* ============= RESETS =============     */
+
+/*-- iPhone X Remove Gutters --*/
+html {
+    padding: env(safe-area-inset);
+}
+
+/*-- Prevent Horizontal Scrolling & Font Style --*/
+html, body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: #6C6C6C
+
+}
+.text-nuno {
+    color: #1EBBA3;
+}
+/*--- Nav Scrolling Offset --*/
+.offset:before {
+    content: "";
+    height: 8rem;
+    display: block;
+    margin-top: -5rem;
+    }
+    
+    
+
+/*--- Extra Bootstrap Column Padding --*/
+
+
+/*============= NAVIGATION =============*/
+.navbar-brand img {
+    height: 3rem;
+}
+.navbar {
+    padding: .7rem 1rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    font-size: .9rem;
+}
+.navbar-nav li{
+    padding-right: .8rem;
+}
+.navbar-nav .nav-link {
+    color: white;
+    padding-top: .8rem;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: #1EBBA3;
+}
+
+.custom-toggler-icon {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.navbar.solid,
+.navbar.solid-toggle{
+    background: rgba(0,0,0,.7) !important;
+    transition: background-color 1s ease;
+}
+/*-- Remove Button Outline --*/
+button:focus, a:focus, a.btn:focus {
+    outline : 0;
+    -webkit-appearance: none;
+    box-shadow: none;
+    transition: all .6s ease;
+}
+button , a , a.btn, .fa-angle-down{
+    transition: all .6s ease;
+}
+.navbar-toggler{
+    background-color: red !important;
+}
+
+
+/*============= LANDING PAGE =============*/
+
+/* Carousel Section */
+/* .carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .carousel-caption{
+      padding-bottom: 350px;
+  }
+  .overlay{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(47, 134, 214, 0.79);
+} */
+/* Carousel section ended */
+
+/*--- Fixed Landing Page Section --*/
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    z-index: -1;
+}
+.home-wrap{
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.home-inner{
+    background-image: url(../img/computers.jpg);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center  center;
+    -webkit-transform: translateZ(0);
+    transform:  translateZ(0);
+    will-change: transform;
+    display: table;
+}
+
+/*-- Landing Page Caption --*/
+.caption {
+    z-index: 1;
+    position: absolute;
+    top: 38%;
+    width: 100%;
+    max-width: 100%;
+}
+
+.caption h1{
+    font-size: 4.5rem;
+    letter-spacing: .3rem;
+    text-shadow:.1rem .1rem .8rem black;
+    padding-bottom: 1rem;
+}
+.caption h3{
+    font-size: 2.5rem;
+    text-shadow:.1rem .1rem .5rem black;
+    padding-bottom: 2rem;
+}
+.caption .btn-lg{
+    border-width: medium;
+    padding: .8rem 1.5rem;
+    font-size: 1.1rem;
+}
+/*-- Bouncing Down Arrow --*/
+.arrow{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.down-arrow .fa-angle-down{
+    color: red;
+    font-size: 2.2rem;
+    opacity: .3;
+}
+.down-arrow .fa-angle-down:hover{
+    opacity: .8;
+}
+
+/* ========Code Icon========== */
+.code-icon{
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid red;
+    border-radius: 50%;
+    
+    display: inline-table;
+    /* padding: 1.5rem 1.8rem; */
+    padding: 10px 20px;
+}
+    
+
+.img-fluid{
+  height: 200px !important;
+  width: 200px !important;
+}
+
+.col-3{
+  margin-top: 20px;
+}
+.code-icon h2 a{
+    color: red;
+}
+.blurb-1 {
+    border-top: 4px solid #4054B2;
+    background-color: #e6dcdf;
+
+  
+}
+.blurb-2{
+    border-top: 4px solid #23A455;
+    background-color: #EFEFEF;
+   
+}
+.know-btn{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card{
+    margin-top: 100px;
+}
+.gallery{
+    margin-top: 9rem;
+}
+.works{
+    margin-top: 100px;
+}
+.team-member{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.team-member img{
+    width: 225px;
+    height: 225px;
+    border: 7px solid rgba(0,0,0,0.1);
+}
+.team-member .name{
+    text-align: center;
+    display: inline;
+}
+.discription h1{
+    word-spacing: .2rem;
+    letter-spacing: .3rem;
+    margin-bottom: 10px;
+}
+.discription p{
+    letter-spacing: .2rem;
+    word-spacing: .2rem;
+}
+
+.carousel-item .carousel-caption {
+    position: absolute;
+    top: 30%;
+}
+.project-img{
+    height: 200px !important;
+}
+.project-title{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 60px;
+    letter-spacing: .1rem;
+    font-weight: 300px;
+    color: black;
+}
+.card-title{
+    color: black;
+}
+.card-body .btn{
+    background-color: #fff;
+    color: black;
+}
+.warning{
+    color: blue;
+    font-size: 80px;
+    font-weight: 800;
+}
+.zoom{
+    font-weight: 800;
+    font-size: 60px;
+}
+.letters{
+    letter-spacing: .3rem;
+    word-spacing: .2rem;
+}
+.gallery .img-fluid{
+    -webkit-box-shadow: -5px -5px 29px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: -5px -5px 29px -10px rgba(0,0,0,0.75);
+box-shadow: -5px -5px 29px -10px rgba(0,0,0,0.75);
+
+}
+
+
+/* Portfolio */
+.team{
+    margin-top: 100px;
+}
+.desc img{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.desc h1{
+    color: black;
+    font-size: 40px;
+    letter-spacing: .2rem;
+
+}
+.desc p{
+    color: black;
+    letter-spacing: .2rem;
+}
+.team h1{
+    color: white;
+}
+.team p{
+    color: white;
+}
+.works .carousel-item img{
+    height: 80vh;
+}
+.footer{
+    margin-top: 50px;
+    background-color: rgb(117, 104, 104);
+}
+.footer p{
+    text-align: center;
+    color: black;
+
+}
+.sponser img{
+    height: 200px;
+    width: 200px;
+    margin-right: 30px;
+    margin-left: 90px;
+}
+.spon-t h4{
+    text-align: center;
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
